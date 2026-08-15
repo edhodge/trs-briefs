@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<title>C12 V3 — Rock: Towel Drill vs Slider</title>
+<style>
+  :root{
+    --ground:#FFFFFF; --panel:#F6F6F4; --ink:#1F1F1F; --muted:#5F6368;
+    --line:#DADCE0; --red:#CF2437; --red-soft:#FBECEE; --chipbg:#F1F3F4;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#171717; --panel:#20201F; --ink:#E8E8E6; --muted:#9AA0A6;
+      --line:#3C4043; --red:#E35664; --red-soft:#33191D; --chipbg:#2A2B2D;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#171717; --panel:#20201F; --ink:#E8E8E6; --muted:#9AA0A6;
+    --line:#3C4043; --red:#E35664; --red-soft:#33191D; --chipbg:#2A2B2D;
+  }
+  body{background:var(--ground); color:var(--ink); font-family:Arial,Helvetica,sans-serif; font-size:15.5px; line-height:1.55; margin:0;}
+  .wrap{max-width:46rem; margin:0 auto; padding:2.6rem 1.25rem 5rem;}
+  h1{font-size:1.7rem; font-weight:700; line-height:1.25; margin:0 0 .6rem; text-wrap:balance;}
+  h2{font-size:1.15rem; font-weight:700; margin:2.2rem 0 .6rem;}
+  a{color:var(--red); text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .meta{color:var(--muted); font-size:.9rem;}
+  .chips{display:flex; gap:.5rem; flex-wrap:wrap; margin:.8rem 0 1.4rem;}
+  .chip{display:inline-flex; align-items:center; gap:.4rem; background:var(--chipbg); border:1px solid var(--line); border-radius:999px; padding:.28rem .8rem .28rem .6rem; font-size:.83rem; color:var(--ink); text-decoration:none;}
+  .chip:hover{text-decoration:none; border-color:var(--red); color:var(--red);}
+  .claim{background:var(--red-soft); border-left:4px solid var(--red); padding:.9rem 1.1rem; margin:1.1rem 0; font-size:1rem;}
+  table.facts{width:100%; border-collapse:collapse; margin:1rem 0 1.4rem; font-size:.92rem;}
+  table.facts td{border:1px solid var(--line); padding:.45rem .7rem; vertical-align:top;}
+  table.facts td:first-child{width:11rem; font-weight:700; background:var(--panel);}
+  td.bigclaim{color:var(--red); font-weight:700;}
+  .legend{background:var(--panel); border:1px solid var(--line); padding:.7rem 1rem; font-size:.86rem; color:var(--muted); margin:1rem 0;}
+  .legend b{color:var(--ink);}
+  .sblock{border-top:1px solid var(--line); padding:1.1rem 0;}
+  .kicker{font-size:.78rem; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--red); display:block; margin-bottom:.35rem;}
+  .l{margin:.15rem 0; }
+  .l b.tag{font-size:.72rem; font-weight:700; letter-spacing:.04em; background:var(--panel); border:1px solid var(--line); padding:.05rem .4rem; margin-right:.45rem; white-space:nowrap;}
+  .l i{font-size:1rem;}
+  .tc{font-family:Menlo,monospace; font-size:.74rem; color:var(--muted); white-space:nowrap;}
+  .sfoot{color:var(--muted); font-size:.9rem; margin:.45rem 0 .4rem;}
+  .ed{font-size:.88rem; margin:.55rem 0 0; padding:.5rem .8rem; background:var(--panel); border:1px solid var(--line);}
+  .ed b{font-size:.7rem; letter-spacing:.06em; text-transform:uppercase; color:var(--muted);}
+  .cards{display:flex; gap:.7rem; flex-wrap:wrap; margin:.7rem 0 .2rem;}
+  .card{display:flex; flex-direction:column; gap:.25rem; cursor:pointer;}
+  .card video{height:190px; width:auto; max-width:210px; object-fit:cover; background:#000; border:1px solid var(--line); display:block;}
+  .card span{font-size:.76rem; color:var(--muted); max-width:210px;}
+  .card:hover span{color:var(--red);}
+  .gapnote{border:1px dashed var(--red); padding:.6rem .9rem; font-size:.88rem; margin:.6rem 0; color:var(--muted);}
+  #lb{position:fixed; inset:0; background:rgba(0,0,0,.8); display:flex; align-items:center; justify-content:center; z-index:50; padding:1rem;}
+  #lb[hidden]{display:none;}
+  .lb-box{background:var(--ground); max-width:min(92vw,600px); padding:.8rem;}
+  .lb-box video{display:block; max-height:74vh; max-width:100%; margin:0 auto; background:#000;}
+  .lb-bar{display:flex; align-items:center; gap:1rem; padding:.6rem .2rem 0;}
+  .lb-bar b{font-family:Menlo,monospace; font-size:.85rem;}
+  .lb-bar a{font-size:.85rem; margin-left:auto;}
+  .lb-bar button{background:none; border:1px solid var(--line); color:var(--ink); padding:.15rem .55rem; cursor:pointer; font-size:.85rem;}
+</style>
+<div class="wrap">
+  <h1>C12 | Robert Rock Interview | V3 — Towel Drill vs The Slider</h1>
+  <div class="chips">
+    <a class="chip" href="https://docs.google.com/document/d/1TwY1I09iUz3LIilImgNLSAcVcI8Gpmi9G_5FvbZCD4A" target="_blank" rel="noopener">📄 Google Brief Doc</a>
+    <a class="chip" href="https://drive.google.com/drive/folders/1FcI-QeaTkl7rJgHzjfgObQ9y4zNxaLrh" target="_blank" rel="noopener">📁 Folder For Upload</a>
+    <a class="chip" href="https://app.asana.com/0/0/1217493823605633/f" target="_blank" rel="noopener">📋 Asana Card</a>
+    <a class="chip" href="https://app.recharm.com/app/trsgolf/" target="_blank" rel="noopener">▶ Recharm Library</a>
+  </div>
+
+  <h2 style="margin-top:1.2rem">Upload Instructions</h2>
+  <p>Three finished files — one per hook, named exactly as below. Upload to <a href="https://drive.google.com/drive/folders/16qhgXEb-KLkBwU8tHb7tObasmavF3wgg" target="_blank" rel="noopener"><b>01 | Finals</b> ↗</a> inside this ad’s Drive folder (<a href="https://drive.google.com/drive/folders/1FcI-QeaTkl7rJgHzjfgObQ9y4zNxaLrh" target="_blank" rel="noopener">C12 | Robert Rock Interview ↗</a>). Then move the <a href="https://app.asana.com/0/0/1217493823605633/f" target="_blank" rel="noopener">Asana card ↗</a> to <b>Ready For Review</b>.</p>
+  <table class="facts">
+    <tr><td>V3.1</td><td>The final that opens with Hook H1</td></tr>
+    <tr><td>V3.2</td><td>The final that opens with Hook H2</td></tr>
+    <tr><td>V3.3</td><td>The final that opens with Hook H3</td></tr>
+    <tr><td>File name</td><td><code>YY.MM.DD | C12 | IT | V3.1 | SLD | VID | Robert Rock Interview | Robert Rock | TRS_Ed | WL | Authority | Practice Smarter | MOF | Tour Content.mp4</code><br>Date is the day you upload, e.g. <code>26.08.15</code>. Same name for V3.2 and V3.3 — only the version changes.</td></tr>
+  </table>
+
+  <table class="facts">
+    <tr><td>Big Claim</td><td class="bigclaim"><i>"The Slider is the towel drill without its limits — full swings, real connection, real numbers."</i></td></tr>
+    <tr><td>Concept</td><td>C12 | Iteration | V3</td></tr>
+    <tr><td>Product</td><td>TRS Slider</td></tr>
+    <tr><td>Type</td><td>Video</td></tr>
+    <tr><td>Partnership</td><td>WL — Robert Rock Golf Academy page</td></tr>
+    <tr><td>Main Lever</td><td>Authority</td></tr>
+    <tr><td>Angle</td><td>Practice Smarter</td></tr>
+    <tr><td>Awareness</td><td>MOF</td></tr>
+    <tr><td>Format</td><td>Tour Content</td></tr>
+    <tr><td>Length</td><td>60–65s</td></tr>
+    <tr><td>Walkthrough (Loom)</td><td>Pending</td></tr>
+  </table>
+
+  <h2>Previous Versions</h2>
+  <p>Iteration of C12 — match the live winner: <a href="https://fb.me/29vEJoj3rzgMwCJ" target="_blank" rel="noopener"><b>▶ Watch V2.3</b> ↗</a>. Earlier finals (V1.1–V1.4) are in the same <a href="https://drive.google.com/drive/folders/16qhgXEb-KLkBwU8tHb7tObasmavF3wgg" target="_blank" rel="noopener">01 | Finals</a> folder.</p>
+
+  <h2>Video Overview</h2>
+  <p>A 60–65s remake of the C12 winner: caption hook → Rock explains the towel drill's limits → towel demo, 111-yd carry → Slider on: full swing with connection → his real 161-yd result with slow-mo proof → standard TRS end cards.</p>
+
+  <div class="legend"><b>Key</b><br>
+<b>[VO]</b> spoken on camera — verbatim, timecoded<br>
+<b>[TEXT]</b> on-screen caption/graphic<br>
+Previews play the full clip muted — click any clip to watch it large with sound.<br>
+<b>Recharm ↗</b> opens the trimmed clip in our library · <b>Drive ↗</b> opens the original full file it was cut from.</div>
+
+  <h2>Hooks</h2>
+
+  <div class="sblock"><span class="kicker">H1 · final V3.1</span>
+    <p class="l"><b class="tag">TEXT</b>"Robert Rock on the Towel Drill vs. The Slider"</p>
+    <p class="l"><b class="tag">VO</b><i>"So since we came up with the slider, we asked the question is how is the slider better than just the towel drill?"</i> <span class="tc">source 0:00.0–0:05.4</span></p>
+    <p class="sfoot"><b>Footage:</b> Rock to camera, on-course (source 0:00–0:05)</p>
+    <div class="cards"><div class="card" data-sym="BME" tabindex="0" role="button" aria-label="Preview Rock to camera — the opener (0:00–0:13)"><video loop muted playsinline preload="metadata" poster="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/poster/KtI2FvIgVuDuz3uk9s2w.jpg" src="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/preview/KtI2FvIgVuDuz3uk9s2w.mp4"></video><span>Rock to camera — the opener (0:00–0:13) · <a class="ext" href="https://app.recharm.com/app/trsgolf/?clipId=BME" target="_blank" rel="noopener">Recharm ↗</a> · <a class="ext" href="https://drive.google.com/file/d/1VFbW7KOzbGPavS7h0awKFgxDfenLNC6p/view" target="_blank" rel="noopener">Drive ↗</a></span></div></div>
+    <p class="ed"><b>Editor Notes</b> — the winner's opener: keep as control. Caption slams on in the first 0.5s; no music under the hook.</p></div>
+
+  <div class="sblock"><span class="kicker">H2 · final V3.2</span>
+    <p class="l"><b class="tag">TEXT</b>"European Tour Winner — Designed The Slider"</p>
+    <p class="l"><b class="tag">VO</b>then the same VO as H1</p>
+    <p class="sfoot"><b>Footage:</b> Rock full swing, Slider on (source 0:59–1:03)</p>
+    <div class="cards"><div class="card" data-sym="BMH" tabindex="0" role="button" aria-label="Preview Rock with Slider on — swing for the credential slam (0:48–1:01)"><video loop muted playsinline preload="metadata" poster="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/poster/adW43u43RXF36v0Q9Kmki.jpg" src="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/preview/adW43u43RXF36v0Q9Kmki.mp4"></video><span>Rock with Slider on — swing for the credential slam (0:48–1:01) · <a class="ext" href="https://app.recharm.com/app/trsgolf/?clipId=BMH" target="_blank" rel="noopener">Recharm ↗</a> · <a class="ext" href="https://drive.google.com/file/d/1VFbW7KOzbGPavS7h0awKFgxDfenLNC6p/view" target="_blank" rel="noopener">Drive ↗</a></span></div></div>
+    <p class="ed"><b>Editor Notes</b> — the credential lands before a word is said (0–1s), then cut to Rock talking. Freeze top-of-backswing for the [TEXT] slam.</p></div>
+
+  <div class="sblock"><span class="kicker">H3 · final V3.3</span>
+    <p class="l"><b class="tag">VO</b><i>"…the towel drill is quite restrictive and you can't get a full swing out of it."</i> <span class="tc">source 0:09.2–0:14.0, cold-open mid-thought</span></p>
+    <p class="l"><b class="tag">TEXT</b>"The problem with the towel drill"</p>
+    <p class="sfoot"><b>Footage:</b> the restricted towel swing (source 0:17–0:23)</p>
+    <div class="cards"><div class="card" data-sym="BMF" tabindex="0" role="button" aria-label="Preview The restricted towel swing (0:14–0:29)"><video loop muted playsinline preload="metadata" poster="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/poster/ViK0va2kY33ixElkNKgve.jpg" src="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/preview/ViK0va2kY33ixElkNKgve.mp4"></video><span>The restricted towel swing (0:14–0:29) · <a class="ext" href="https://app.recharm.com/app/trsgolf/?clipId=BMF" target="_blank" rel="noopener">Recharm ↗</a> · <a class="ext" href="https://drive.google.com/file/d/1VFbW7KOzbGPavS7h0awKFgxDfenLNC6p/view" target="_blank" rel="noopener">Drive ↗</a></span></div></div>
+    <p class="ed"><b>Editor Notes</b> — open ON the towel-restricted swing with the VO over it; snap-zoom to the tucked towel at "restrictive".</p></div>
+
+  <h2>Main Script</h2>
+
+  <div class="sblock"><span class="kicker">S1</span>
+    <p class="l"><b class="tag">VO</b><i>"Now, I'm gonna show you the difference, but it was one of the reasons why I made the slider, is that the towel drill is quite restrictive and you can't get a full swing out of it. The towel drill is good for pitching and chipping and stuff like that."</i> <span class="tc">source 0:05.4–0:16.8</span></p>
+    <p class="sfoot"><b>Footage:</b> Rock A-cam — hold on him talking; no cutaway yet</p>
+    <div class="cards"><div class="card" data-sym="BME" tabindex="0" role="button" aria-label="Preview Rock talking — hold this take"><video loop muted playsinline preload="metadata" poster="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/poster/KtI2FvIgVuDuz3uk9s2w.jpg" src="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/preview/KtI2FvIgVuDuz3uk9s2w.mp4"></video><span>Rock talking — hold this take · <a class="ext" href="https://app.recharm.com/app/trsgolf/?clipId=BME" target="_blank" rel="noopener">Recharm ↗</a> · <a class="ext" href="https://drive.google.com/file/d/1VFbW7KOzbGPavS7h0awKFgxDfenLNC6p/view" target="_blank" rel="noopener">Drive ↗</a></span></div></div>
+    <p class="ed"><b>Editor Notes</b> — raw and honest, no music yet. Keep his gesture at "full swing".</p></div>
+
+  <div class="sblock"><span class="kicker">S2</span>
+    <p class="l"><b class="tag">VO</b><i>"But if I just do a shot with the towel in position… I feel like that's pretty much the only area of the swing I can do and still make a decent shot. Now that's a 111 yard carry with a seven iron, which is miles off my normal seven iron yardage. I would like to think I hit my seven iron close to 170."</i> <span class="tc">source 0:16.8–0:40.2</span></p>
+    <p class="l"><b class="tag">TEXT</b>"111 yds — 60 short" — on the quad reading</p>
+    <p class="sfoot"><b>Footage:</b> towel demo swing + strike, launch monitor in shot (source 0:17–0:29)</p>
+    <div class="cards"><div class="card" data-sym="BMF" tabindex="0" role="button" aria-label="Preview Towel demo swing"><video loop muted playsinline preload="metadata" poster="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/poster/ViK0va2kY33ixElkNKgve.jpg" src="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/preview/ViK0va2kY33ixElkNKgve.mp4"></video><span>Towel demo swing · <a class="ext" href="https://app.recharm.com/app/trsgolf/?clipId=BMF" target="_blank" rel="noopener">Recharm ↗</a> · <a class="ext" href="https://drive.google.com/file/d/1VFbW7KOzbGPavS7h0awKFgxDfenLNC6p/view" target="_blank" rel="noopener">Drive ↗</a></span></div><div class="card" data-sym="BMG" tabindex="0" role="button" aria-label="Preview The 111-yd strike + monitor (0:29–0:48)"><video loop muted playsinline preload="metadata" poster="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/poster/euf9OyV242ibNbQ8YnL8l.jpg" src="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/preview/euf9OyV242ibNbQ8YnL8l.mp4"></video><span>The 111-yd strike + monitor (0:29–0:48) · <a class="ext" href="https://app.recharm.com/app/trsgolf/?clipId=BMG" target="_blank" rel="noopener">Recharm ↗</a> · <a class="ext" href="https://drive.google.com/file/d/1VFbW7KOzbGPavS7h0awKFgxDfenLNC6p/view" target="_blank" rel="noopener">Drive ↗</a></span></div></div>
+    <p class="ed"><b>Editor Notes</b> — hold Rock's towel swing full-frame — the restriction IS the visual. Music in after the strike.</p></div>
+
+  <div class="sblock"><span class="kicker">S3 · SWAP ZONE</span>
+    <p class="l"><b class="tag">VO</b><i>"So with the slider, I can hit full shots. I can get the normal numbers out of it and rehearse a proper full swing. So now I've got my slider on. This is an extension of the towel drill. So I can make a fuller swing, but still have the connection that I need and actually achieve proper numbers on the quad."</i> <span class="tc">source 0:40.2–0:58.9</span></p>
+    <p class="l"><b class="tag">TEXT</b>"Full swing. Same connection."</p>
+    <p class="sfoot"><b>Footage:</b> top/bottom split screen for the whole section — <b>TOP:</b> Rock with the Slider on, from the source video (0:40–0:59) · <b>BOTTOM:</b> Slider-in-use footage rolling — Alex Clapp (behind + face-on) → Tom Radford → Becky Morgan → Iain Lowdean</p>
+    <div class="cards"><div class="card" data-sym="BMH" tabindex="0" role="button" aria-label="Preview TOP half — Rock, Slider on (0:48–1:01)"><video loop muted playsinline preload="metadata" poster="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/poster/adW43u43RXF36v0Q9Kmki.jpg" src="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/preview/adW43u43RXF36v0Q9Kmki.mp4"></video><span>TOP half — Rock, Slider on (0:48–1:01) · <a class="ext" href="https://app.recharm.com/app/trsgolf/?clipId=BMH" target="_blank" rel="noopener">Recharm ↗</a> · <a class="ext" href="https://drive.google.com/file/d/1VFbW7KOzbGPavS7h0awKFgxDfenLNC6p/view" target="_blank" rel="noopener">Drive ↗</a></span></div><div class="card" data-sym="YN" tabindex="0" role="button" aria-label="Preview Alex Clapp — behind, Slider on (1s cut)"><video loop muted playsinline preload="metadata" poster="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/poster/qfnq78EQtWxu6JHrMbS.jpg" src="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/preview/qfnq78EQtWxu6JHrMbS.mp4"></video><span>Alex Clapp — behind, Slider on (1s cut) · <a class="ext" href="https://app.recharm.com/app/trsgolf/?clipId=YN" target="_blank" rel="noopener">Recharm ↗</a> · <a class="ext" href="https://drive.google.com/file/d/1w4EEkhr3iSjq91B46U5I4wBcWeuUpxGj/view" target="_blank" rel="noopener">Drive ↗</a></span></div><div class="card" data-sym="DFR" tabindex="0" role="button" aria-label="Preview Alex Clapp — face-on, Slider on"><video loop muted playsinline preload="metadata" poster="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/poster/37o5u14tPBTP9q421jPM.jpg" src="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/preview/37o5u14tPBTP9q421jPM.mp4"></video><span>Alex Clapp — face-on, Slider on · <a class="ext" href="https://app.recharm.com/app/trsgolf/?clipId=DFR" target="_blank" rel="noopener">Recharm ↗</a> · <a class="ext" href="https://drive.google.com/file/d/1VyVRGVOONh2phK0xZmjNJTK8Zi6onIlI/view" target="_blank" rel="noopener">Drive ↗</a></span></div><div class="card" data-sym="NN" tabindex="0" role="button" aria-label="Preview Tom Radford — behind, Slider on"><video loop muted playsinline preload="metadata" poster="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/poster/upgQgn1IWG3kZDcFTFBkI.jpg" src="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/preview/upgQgn1IWG3kZDcFTFBkI.mp4"></video><span>Tom Radford — behind, Slider on · <a class="ext" href="https://app.recharm.com/app/trsgolf/?clipId=NN" target="_blank" rel="noopener">Recharm ↗</a> · <a class="ext" href="https://drive.google.com/file/d/1x1YeoBv7Un-1yB4t3N88bZpees-fZqvG/view" target="_blank" rel="noopener">Drive ↗</a></span></div><div class="card" data-sym="DDJ" tabindex="0" role="button" aria-label="Preview Becky Morgan — range, full swing"><video loop muted playsinline preload="metadata" poster="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/poster/A284fFpvHAHEQfeMRu8GS.jpg" src="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/preview/A284fFpvHAHEQfeMRu8GS.mp4"></video><span>Becky Morgan — range, full swing · <a class="ext" href="https://app.recharm.com/app/trsgolf/?clipId=DDJ" target="_blank" rel="noopener">Recharm ↗</a> · <a class="ext" href="https://drive.google.com/file/d/1abEstJe_f-ky_k91qYsEGzTQJewcCEIC/view" target="_blank" rel="noopener">Drive ↗</a></span></div><div class="card" data-sym="DNJ" tabindex="0" role="button" aria-label="Preview Iain Lowdean — face-on"><video loop muted playsinline preload="metadata" poster="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/poster/NcWMTk2OvFzafUGzI.jpg" src="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/preview/NcWMTk2OvFzafUGzI.mp4"></video><span>Iain Lowdean — face-on · <a class="ext" href="https://app.recharm.com/app/trsgolf/?clipId=DNJ" target="_blank" rel="noopener">Recharm ↗</a> · <a class="ext" href="https://drive.google.com/file/d/1Z6n-fQlPAFIu_wcb5k-rtRGcx9BrH46I/view" target="_blank" rel="noopener">Drive ↗</a></span></div></div>
+    <p class="ed"><b>Editor Notes</b> — hold the split for the full section; bottom feed changes every 1–2s, no two consecutive cuts from the same source, vary palette/setting. Slider clearly visible in BOTH halves at all times (non-negotiable).</p></div>
+
+  <div class="sblock"><span class="kicker">S4</span>
+    <p class="l"><b class="tag">VO</b><i>"So let's just go ahead and hit one. … Right, so now hit that 161, which is a bit more realistic for a seven iron for me."</i> <span class="tc">source 0:58.9–1:10.9 · his swing sits at 1:00.9–1:06.3</span></p>
+    <p class="l"><b class="tag">TEXT</b>"161 yds — full numbers back"</p>
+    <p class="sfoot"><b>Footage:</b> Rock's strike (1:00–1:06) → slow-mo Slider swings (Michael Newton, Michael Kanev) → shot tracer (Harry Crowther) right after "161"</p>
+    <div class="cards"><div class="card" data-sym="BMI" tabindex="0" role="button" aria-label="Preview Rock’s 161-yd result (1:06–1:11)"><video loop muted playsinline preload="metadata" poster="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/poster/HkL4Vs1rhtxc71SjvTIe.jpg" src="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/preview/HkL4Vs1rhtxc71SjvTIe.mp4"></video><span>Rock’s 161-yd result (1:06–1:11) · <a class="ext" href="https://app.recharm.com/app/trsgolf/?clipId=BMI" target="_blank" rel="noopener">Recharm ↗</a> · <a class="ext" href="https://drive.google.com/file/d/1VFbW7KOzbGPavS7h0awKFgxDfenLNC6p/view" target="_blank" rel="noopener">Drive ↗</a></span></div><div class="card" data-sym="CZR" tabindex="0" role="button" aria-label="Preview Michael Newton — slow-mo, Slider on"><video loop muted playsinline preload="metadata" poster="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/poster/i7bHGrh3ebE0XaDDUBrn.jpg" src="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/preview/i7bHGrh3ebE0XaDDUBrn.mp4"></video><span>Michael Newton — slow-mo, Slider on · <a class="ext" href="https://app.recharm.com/app/trsgolf/?clipId=CZR" target="_blank" rel="noopener">Recharm ↗</a> · <a class="ext" href="https://drive.google.com/file/d/1ieA2TRmKZKIMvXIiQeKQ7_aqietHr_wW/view" target="_blank" rel="noopener">Drive ↗</a></span></div><div class="card" data-sym="DAC" tabindex="0" role="button" aria-label="Preview Michael Kanev — slow-mo, on-course"><video loop muted playsinline preload="metadata" poster="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/poster/XGVdA4qVYC0K8WjFnAb.jpg" src="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/preview/XGVdA4qVYC0K8WjFnAb.mp4"></video><span>Michael Kanev — slow-mo, on-course · <a class="ext" href="https://app.recharm.com/app/trsgolf/?clipId=DAC" target="_blank" rel="noopener">Recharm ↗</a> · <a class="ext" href="https://drive.google.com/file/d/14gupMR92NK74zTDkNCBKUaECxsYSwibK/view" target="_blank" rel="noopener">Drive ↗</a></span></div><div class="card" data-sym="DIJ" tabindex="0" role="button" aria-label="Preview Harry Crowther — shot tracer"><video loop muted playsinline preload="metadata" poster="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/poster/sDEQC07ulgl1Ako38e2C.jpg" src="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/preview/sDEQC07ulgl1Ako38e2C.mp4"></video><span>Harry Crowther — shot tracer · <a class="ext" href="https://app.recharm.com/app/trsgolf/?clipId=DIJ" target="_blank" rel="noopener">Recharm ↗</a> · <a class="ext" href="https://drive.google.com/file/d/1h4-XPc-D0otpP0kAzK8q9dvE2IVaag-8/view" target="_blank" rel="noopener">Drive ↗</a></span></div></div>
+    <p class="ed"><b>Editor Notes</b> — keep the real quad number on screen — concrete numbers beat adjectives. The tracer is the money shot; let it breathe ~1.5s. Do NOT cut to the end cards from here — S4b carries the energy in.</p></div>
+
+  <div class="sblock"><span class="kicker">S4b · Final montage — added 14 Aug</span>
+    <p class="l"><b class="tag">TEXT</b>"Full swings. Real connection. Real numbers."</p>
+    <p class="l"><b class="tag">VO</b>none — music peak carries it</p>
+    <p class="sfoot"><b>Footage:</b> 2–3s rapid montage — tracer arc → best slow-mo → one swap-zone swing</p>
+    <div class="cards"><div class="card" data-sym="DIJ" tabindex="0" role="button" aria-label="Preview Tracer arc"><video loop muted playsinline preload="metadata" poster="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/poster/sDEQC07ulgl1Ako38e2C.jpg" src="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/preview/sDEQC07ulgl1Ako38e2C.mp4"></video><span>Tracer arc · <a class="ext" href="https://app.recharm.com/app/trsgolf/?clipId=DIJ" target="_blank" rel="noopener">Recharm ↗</a> · <a class="ext" href="https://drive.google.com/file/d/1h4-XPc-D0otpP0kAzK8q9dvE2IVaag-8/view" target="_blank" rel="noopener">Drive ↗</a></span></div><div class="card" data-sym="CZR" tabindex="0" role="button" aria-label="Preview Best slow-mo"><video loop muted playsinline preload="metadata" poster="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/poster/i7bHGrh3ebE0XaDDUBrn.jpg" src="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/preview/i7bHGrh3ebE0XaDDUBrn.mp4"></video><span>Best slow-mo · <a class="ext" href="https://app.recharm.com/app/trsgolf/?clipId=CZR" target="_blank" rel="noopener">Recharm ↗</a> · <a class="ext" href="https://drive.google.com/file/d/1ieA2TRmKZKIMvXIiQeKQ7_aqietHr_wW/view" target="_blank" rel="noopener">Drive ↗</a></span></div><div class="card" data-sym="DFR" tabindex="0" role="button" aria-label="Preview Swap-zone swing"><video loop muted playsinline preload="metadata" poster="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/poster/37o5u14tPBTP9q421jPM.jpg" src="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/preview/37o5u14tPBTP9q421jPM.mp4"></video><span>Swap-zone swing · <a class="ext" href="https://app.recharm.com/app/trsgolf/?clipId=DFR" target="_blank" rel="noopener">Recharm ↗</a> · <a class="ext" href="https://drive.google.com/file/d/1VyVRGVOONh2phK0xZmjNJTK8Zi6onIlI/view" target="_blank" rel="noopener">Drive ↗</a></span></div></div>
+    <p class="ed"><b>Editor Notes</b> — this beat exists so the ad doesn't die between the 161 payoff and the cards: pace UP into the CTA, hard cut to cards on the music hit.</p></div>
+
+  <div class="sblock"><span class="kicker">S5 · End cards</span>
+    <p class="l"><b class="tag">TEXT</b>"Training Aids Designed And Used By Tour Pros" → ★★★★★ "50,000+ golfers" → "60-Day Lower Score Guarantee" → SHOP NOW</p>
+    <p class="sfoot"><b>Footage:</b> TRS end-card pack (Brand Assets → End Card)</p>
+    <p class="ed"><b>Editor Notes</b> — match V2.3's cards and timing exactly. British spelling, £ not $.</p></div>
+
+</div>
+<div id="lb" hidden>
+  <div class="lb-box">
+    <video id="lbv" controls playsinline></video>
+    <div class="lb-bar"><b id="lbt"></b><a id="lbr" href="#" target="_blank" rel="noopener">Open in Recharm ↗</a><button id="lbx" aria-label="Close">✕ close</button></div>
+  </div>
+</div>
+<script>
+var MED = {"BME": "https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/final/uZ2LLKcfHGaUiQaZHlgR7.mp4", "BMF": "https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/final/1JX7yQjptfb429Qc88H.mp4", "BMG": "https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/final/kO1MfuomN7TqFOvswIKh.mp4", "BMH": "https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/final/dbk6rF5N1mZvHFGAvfZtx.mp4", "BMI": "https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/final/2kcaV8YcjBMH8LwKUaKKU.mp4", "YN": "https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/final/bJuqHMHztCUDtnrBKOab5.mp4", "DFR": "https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/final/O0kbDYGptfBolXx7Iy202.mp4", "NN": "https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/final/2PSKjVwyU4uJ8ugKP4hb2.mp4", "DDJ": "https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/final/UeOAfyYIg7IKEnCSPxCw7.mp4", "DIJ": "https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/final/DEfmlVGDtvnGVb16a5AQE.mp4", "CZR": "https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/final/ioPu7Kp0rsE9bE3LjDo.mp4", "DAC": "https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/final/okMMVGC3pBVtwfQ2PPn34.mp4", "DNJ": "https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/final/NMhiZukk1LoAsQjOzZPO.mp4"};
+(function(){
+  var vids = document.querySelectorAll('.card video');
+  function nudge(v){ var p = v.play(); if(p && p.catch) p.catch(function(){}); }
+  vids.forEach(function(v){
+    v.closest('.card').addEventListener('mouseenter', function(){ nudge(v); });
+  });
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting) nudge(e.target); else e.target.pause(); }); }, {threshold:.2});
+    vids.forEach(function(v){ io.observe(v); });
+  }
+  var lb=document.getElementById('lb'), lbv=document.getElementById('lbv'),
+      lbt=document.getElementById('lbt'), lbr=document.getElementById('lbr');
+  function openLb(sym){
+    lbt.textContent = sym;
+    lbr.href = 'https://app.recharm.com/app/trsgolf/?clipId=' + sym;
+    lbv.src = MED[sym] || '';
+    lb.hidden = false;
+    lbv.muted = false;
+    var p = lbv.play(); if(p && p.catch) p.catch(function(){});
+  }
+  function closeLb(){ lb.hidden = true; lbv.pause(); lbv.removeAttribute('src'); lbv.load(); }
+  document.querySelectorAll('.card').forEach(function(c){
+    c.addEventListener('click', function(e){
+      if(e.target.closest('a.ext')) return;
+      e.preventDefault(); openLb(c.dataset.sym);
+    });
+  });
+  document.getElementById('lbx').addEventListener('click', closeLb);
+  lb.addEventListener('click', function(e){ if(e.target === lb) closeLb(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && !lb.hidden) closeLb(); });
+})();
+</script>
+
+</body>
+</html>
