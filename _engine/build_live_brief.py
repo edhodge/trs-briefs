@@ -41,7 +41,9 @@ def main(cfg_path):
     html = html.replace("{{MEDMAP}}", json.dumps(med))
     page = ('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
             '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
-            '<meta name="robots" content="noindex, nofollow">\n</head>\n<body>\n' + html + "\n</body>\n</html>\n")
+            '<meta name="robots" content="noindex, nofollow">\n'
+            '<link rel="icon" type="image/png" href="/favicon.png">\n'
+            '<link rel="apple-touch-icon" href="/apple-touch-icon.png">\n</head>\n<body>\n' + html + "\n</body>\n</html>\n")
     out = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), cfg["slug"])
     os.makedirs(out, exist_ok=True)
     open(os.path.join(out, "index.html"), "w").write(page)
