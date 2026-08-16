@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Render a TRS Live Brief page from a filled template + clip config.
+"""Render a TRS Brief & Storyboard page from a filled template + clip config.
 
-Usage: python3 build_live_brief.py <config.json>
+Usage: python3 build_brief_storyboard.py <config.json>
 
 config.json:
 {
