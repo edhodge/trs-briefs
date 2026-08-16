@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+</head>
+<body>
+<title>C42 | IT | V5 | SLD | STA | Week-by-Week Timeline | _ | TRS_Ed | _ | Problem | Slice | TOF | Listicle</title>
+<style>
+  :root{
+    --ground:#FFFFFF; --panel:#F6F6F4; --ink:#1F1F1F; --muted:#5F6368;
+    --line:#DADCE0; --red:#CF2437; --red-soft:#FBECEE; --chipbg:#F1F3F4;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#171717; --panel:#20201F; --ink:#E8E8E6; --muted:#9AA0A6;
+      --line:#3C4043; --red:#E35664; --red-soft:#33191D; --chipbg:#2A2B2D;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#171717; --panel:#20201F; --ink:#E8E8E6; --muted:#9AA0A6;
+    --line:#3C4043; --red:#E35664; --red-soft:#33191D; --chipbg:#2A2B2D;
+  }
+  body{background:var(--ground); color:var(--ink); font-family:Arial,Helvetica,sans-serif; font-size:15.5px; line-height:1.55; margin:0;}
+  .wrap{max-width:46rem; margin:0 auto; padding:2.6rem 1.25rem 5rem;}
+  .masthead{background:#161616;}
+  .mh-in{max-width:46rem; margin:0 auto; padding:.85rem 1.25rem; display:flex; align-items:center; gap:.85rem;}
+  .toplogo{height:40px; width:auto; color:#FFFFFF; display:block;}
+  .mh-sep{color:rgba(255,255,255,.4); font-size:1.5rem; font-weight:300; line-height:1;}
+  .mh-title{color:#FFFFFF; font-size:1.1rem; font-weight:700; letter-spacing:-.02em;}
+  h1{font-size:1.7rem; font-weight:700; line-height:1.25; margin:0 0 .6rem; text-wrap:balance;}
+  h2{font-size:1.15rem; font-weight:700; margin:2.2rem 0 .3rem;}
+  h2 + p{margin-top:.25rem;}
+  a{color:var(--red); text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .meta{color:var(--muted); font-size:.9rem;}
+  .chips{display:flex; gap:.5rem; flex-wrap:wrap; margin:.8rem 0 1.4rem;}
+  p:has(.pill){line-height:1.9;}
+  .chip img, .pill img{width:15px; height:15px; object-fit:contain;}
+  .pill{display:inline-flex; margin:0 .18rem; align-items:center; gap:.4rem; background:var(--chipbg); border:1px solid var(--line); border-radius:999px; padding:.1rem .8rem .1rem .6rem; color:var(--ink); text-decoration:none; white-space:nowrap; font-size:.83rem; line-height:1.55; vertical-align:middle;}
+  .pill b{color:var(--red);}
+  .pill:hover{border-color:var(--red); text-decoration:none;}
+  .card span a.ext{display:inline-block; background:var(--chipbg); border:1px solid var(--line); border-radius:999px; padding:0 .45rem; text-decoration:none; font-size:.95em;}
+  .card span a.ext:hover{border-color:var(--red);}
+  .chip{display:inline-flex; align-items:center; gap:.4rem; background:var(--chipbg); border:1px solid var(--line); border-radius:999px; padding:.1rem .8rem .1rem .6rem; font-size:.83rem; color:var(--ink); text-decoration:none;}
+  .chip:hover{text-decoration:none; border-color:var(--red); color:var(--red);}
+  .claim{background:var(--red-soft); border-left:4px solid var(--red); padding:.9rem 1.1rem; margin:1.1rem 0; font-size:1rem;}
+  table.facts{width:100%; border-collapse:collapse; margin:1rem 0 1.4rem; font-size:.92rem;}
+  table.facts td{border:1px solid var(--line); padding:.45rem .7rem; vertical-align:top;}
+  table.facts td:first-child{width:11rem; font-weight:700; background:var(--panel);}
+  td.bigclaim{color:var(--red); font-weight:700;}
+  .legend{background:var(--panel); border:1px solid var(--line); padding:.7rem 1rem; font-size:.86rem; color:var(--muted); margin:1rem 0;}
+  .legend b{color:var(--ink);}
+  .sblock{border-top:1px solid var(--line); padding:1.1rem 0;}
+  .kicker{font-size:.78rem; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--red); display:block; margin-bottom:.35rem;}
+  .l{margin:.15rem 0; }
+  .l b.tag{font-size:.72rem; font-weight:700; letter-spacing:.04em; background:var(--panel); border:1px solid var(--line); padding:.05rem .4rem; margin-right:.45rem; white-space:nowrap;}
+  .l i{font-size:1rem;}
+  .tc{font-family:Menlo,monospace; font-size:.74rem; color:var(--muted); white-space:nowrap;}
+  .sfoot{color:var(--muted); font-size:.9rem; margin:.45rem 0 .4rem;}
+  .ed{font-size:.88rem; margin:.55rem 0 0; padding:.5rem .8rem; background:var(--panel); border:1px solid var(--line);}
+  .ed b{font-size:.7rem; letter-spacing:.06em; text-transform:uppercase; color:var(--muted);}
+  .cards{display:flex; gap:.7rem; flex-wrap:wrap; margin:.7rem 0 .2rem;}
+  .card{display:flex; flex-direction:column; gap:.25rem; cursor:pointer;}
+  .card video{height:190px; width:auto; max-width:210px; object-fit:cover; background:#000; border:1px solid var(--line); display:block;}
+  .card span{font-size:.76rem; color:var(--muted); max-width:210px;}
+  .card:hover span{color:var(--red);}
+  .gapnote{border:1px dashed var(--red); padding:.6rem .9rem; font-size:.88rem; margin:.6rem 0; color:var(--muted);}
+  #lb{position:fixed; inset:0; background:rgba(0,0,0,.8); display:flex; align-items:center; justify-content:center; z-index:50; padding:1rem;}
+  #lb[hidden]{display:none;}
+  .lb-box{background:var(--ground); max-width:min(92vw,600px); padding:.8rem;}
+  .lb-box video{display:block; max-height:74vh; max-width:100%; margin:0 auto; background:#000;}
+  .lb-bar{display:flex; align-items:center; gap:1rem; padding:.6rem .2rem 0;}
+  .lb-bar b{font-family:Menlo,monospace; font-size:.85rem;}
+  .lb-bar a{font-size:.85rem; margin-left:auto;}
+  .lb-bar button{background:none; border:1px solid var(--line); color:var(--ink); padding:.15rem .55rem; cursor:pointer; font-size:.85rem;}
+</style>
+<header class="masthead"><div class="mh-in"><svg class="toplogo" role="img" aria-label="TRS Golf" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" role="img" aria-label="TRS Golf">
+  <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)"
+fill="currentColor" stroke="none">
+<path d="M6445 3950 c-310 -33 -463 -153 -525 -411 -60 -251 -24 -439 108
+-561 75 -69 134 -100 412 -213 250 -101 271 -112 297 -151 39 -60 8 -220 -52
+-272 -65 -58 -140 -63 -695 -53 l-215 4 -22 -149 c-11 -82 -18 -152 -15 -155
+10 -9 164 -36 310 -54 187 -22 401 -29 548 -16 386 34 526 160 580 525 38 259
+-16 419 -178 525 -38 25 -168 83 -330 147 -147 58 -279 115 -294 126 -55 44
+-64 116 -28 228 19 57 43 86 91 108 34 15 76 17 429 14 l392 -3 10 63 c30 179
+34 221 21 228 -17 11 -200 48 -299 60 -115 15 -446 21 -545 10z"/>
+<path d="M4450 3940 c-206 -12 -217 -14 -224 -48 -3 -15 -24 -160 -46 -322
+-35 -252 -173 -1238 -214 -1527 l-13 -93 212 0 211 0 54 381 54 380 207 -3
+c202 -3 208 -4 232 -26 14 -13 30 -36 36 -50 6 -15 31 -164 56 -332 25 -168
+47 -315 50 -327 5 -23 5 -23 226 -23 l221 0 -6 28 c-3 15 -28 162 -56 326 -28
+164 -58 319 -67 344 -32 95 -85 154 -167 188 -25 11 -46 22 -46 25 0 3 39 15
+87 27 197 49 300 166 347 395 20 97 21 265 1 341 -42 159 -166 259 -375 301
+-100 21 -527 29 -780 15z m655 -350 c62 -31 85 -72 85 -153 0 -119 -47 -274
+-97 -319 -10 -10 -41 -28 -68 -40 -46 -21 -66 -23 -273 -26 l-223 -4 6 39 c16
+106 75 526 75 530 0 3 100 3 223 1 213 -3 224 -4 272 -28z"/>
+<path d="M2375 3898 c-4 -21 -45 -311 -45 -323 0 -3 131 -5 290 -5 232 0 290
+-3 290 -13 0 -7 -47 -346 -105 -753 -57 -406 -107 -765 -111 -796 l-7 -58 217
+0 c119 0 216 3 216 7 0 3 43 310 95 682 53 372 103 732 113 801 l17 125 292 3
+292 2 5 33 c3 17 13 84 21 147 9 63 18 127 21 143 l6 27 -801 0 -801 0 -5 -22z"/>
+</g>
+  <g transform="translate(0.000000,449.330000) scale(0.100000,-0.100000)"
+fill="#FC3137" stroke="none">
+<path d="M1656 732 l-200 -167 3142 -3 3143 -2 91 77 c50 43 112 96 138 118
+26 22 72 60 103 85 31 25 56 48 57 53 0 4 -1412 7 -3137 7 l-3138 -1 -199
+-167z"/>
+</g>
+</svg><span class="mh-sep">|</span><span class="mh-title">Ad Briefs</span></div></header>
+<div class="wrap">
+  <h1>C42 | IT | V5 | SLD | STA | Week-by-Week Timeline | _ | TRS_Ed | _ | Problem | Slice | TOF | Listicle</h1>
+  <div class="chips">
+    <a class="chip" href="https://app.asana.com/0/0/1215773010479037/f" target="_blank" rel="noopener"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAFLUlEQVR4nO1WW4iVVRT+1t7//Zwzx8AQlTS6CE2FRUjUQ71IBgVadCZKopDIonopyIeIYaIgiorIKLsIPZjYRBnkg1EUPSRJV8zxpR4qAoNEz+2/7cuK/Z+ZcRxnHLWilxbsc/a/91rft9dee629gf9I6GyMeHRUnAAyNmb/sRXNJQzQbNJqfHRUuDmcgdDpKjpgqv6AdP3t55EML6rGTfFT8uGu32br/CPEPAnImzY1ytR/XDLu0JbPc9Ye0W+G7M4gMU/T9u3d0yWn0yGtflsjkZLL3/aDpMWGoSaj6hODPEJZ9sYD492N8RdyZ7IQuVjQ3VZLEIhL7+KNfri4pTnSSkQWfsSuKRFbbWMdBOe2Si/e6HSdzd/22AljVKi7xB4/kutK9K0QWjINXCaWsMYzAepCZWqvv8PeRFj4lHunmpyO132IYLOliDQRpQRPgyaJYSXISIJVLuJLcV8Q4XWkC8VanIp42nDtpQXF3S5qXUbSASVtUG2yJW0g7gC1Hlc6ay8tTrA9G+KpHKWRESOS/meopURJxyDpMGrHgFrbNaaka1Drk4h6nznduXL9zE81D44oRm9ZbvzyY7movMTovoHUA1vtsfTq0rSDQ1L5N2Dsg98nY8RnTcxTK5+YIBofN8Xzay+Xfuc1WcuuRagGSkUA04+/NKpxf/joJwe41ZIYHuaFSinNRzifEW9bmmivvk7E6RXu25bJ914xtJc2f5OeCRadpAimKhdd/+FHh3V8bDnHnbaP7Eca+2hO8OMkVyUKF1xG2VDTyxb9Ti8/PzEbc07iKYXizicv9wJ+0oSdtVRv15G0S9Fo/2C97rP+I/ve43chZ9rRCIx66ZrbRNF4zHabq5E2A+41eyJvfmpU+UT4zlMHZpOLE7YExDyyeTVxf48Q0QYBr17lKctAkL/G88VO/erqexwRDo6ya67vxjxJO4Xw1zhdsIAgry5lsJ6g9vDIQ6sr7BmnfdpjZiZs3uzlR837UbT45tLECknpiaRNLk857hi/2ZPG6/4hY3U13fvdL5Xdm1euNJn3ldSNJapbM5Q2JbIh2H6TkUc6oNzPiz8/ihZ9eyu2fe0qUOW1mPaWiMsjR1YR59crlTKz8Uj7xDoAdAjSsdS9yEgztMR0kxunFuz60g4t0f3ICBVLpwsdgIxPbI2nVJ/J5teXR85f5TimvK5K5vjEROW5sHYZS92wNgeJgqFrQBkDUgNkB7vih25NK6e3LGusgIiZc59QOP0I7GyUB+I+rC1JQDfI2mUADk5xVcStybxjITrMuhBchJZTkA0GQGQHMbEESENsgmPTHveH2kLGhEwyVAyeJIdVYM4gkINZFRCiM5NrEOyxserDj6JDDD7kCwW2qWHbA7QCigQ2rVtRNNl0agXS5ufTR1o1PjfdWuHmbFa3yGtwlzVzWmH4VIJhDznsmVwVcfW6cHHesaNDQj5jrDYR5R7bnrG2a1iXWpaxkPpcyb36G+GL2/a7bXctfO6t/dxvvOHmZF4TrIy2tmfY9EyE3DNWGYfpsAeZMyilx4/32Jh1E+H4+C5l7QPaFIdDymUoMhmIvgeTprpbbPVEtGVQD2lQkNnFK9qiO+VWmDx1uqHMZEiZ1FwcdlgOc3YFm7dWZxs2XAiidZDhCqLkqED8RTD+yr5BoTl+187sl60Hr7EormNOz4HJfgXz3nj37p/n4zhJ5rvWXPWZ6xlbPXvB89b9ucbn9bgycEffncLJFHA31CkX7G4mJ1M2w8P8rz/2/xcsIH8BGHrX3vbLHUsAAAAASUVORK5CYII=" alt=""> Asana Card</a>
+  </div>
+
+  <div class="claim"><b>The most-validated body framework in the account (£254k lifetime) — never led a static.</b></div>
+  <p class="meta">Brief of record: the Asana card (this page renders it). No Google Doc for this one.</p>
+
+  <h2>The Static</h2>
+  <table class="facts">
+    <tr><td>Headline</td><td>"Week 1: Restricted. Week 4: Slice gone. What happens in between?"</td></tr>
+    <tr><td>Visual</td><td>4-panel grid — Week 1–4 outcomes as text callouts; product image anchors the bottom.</td></tr>
+  </table>
+  <p class="meta">Success: CTR &gt; 1.3%, CPA &lt; £33. Real imagery only, £ not $.</p>
+  <h2>Deliverables</h2>
+  <p>Static set (1:1 + 4:5 + 9:16). Upload to the C42 concept folder → mark the Asana card <b>Ready For Review</b>.</p>
+<p style="text-align:center;color:#9AA0A6;font-size:.72rem;margin:3rem 0 0">build 9b1d04</p>
+</div>
+<div id="lb" hidden>
+  <div class="lb-box">
+    <video id="lbv" controls playsinline></video>
+    <div class="lb-bar"><b id="lbt"></b><a id="lbr" href="#" target="_blank" rel="noopener">Open in Recharm ↗</a><button id="lbx" aria-label="Close">✕ close</button></div>
+  </div>
+</div>
+<script>
+var MED = {};
+(function(){
+  var vids = document.querySelectorAll('.card video');
+  function nudge(v){ var p = v.play(); if(p && p.catch) p.catch(function(){}); }
+  vids.forEach(function(v){
+    v.closest('.card').addEventListener('mouseenter', function(){ nudge(v); });
+  });
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting) nudge(e.target); else e.target.pause(); }); }, {threshold:.2});
+    vids.forEach(function(v){ io.observe(v); });
+  }
+  var lb=document.getElementById('lb'), lbv=document.getElementById('lbv'),
+      lbt=document.getElementById('lbt'), lbr=document.getElementById('lbr');
+  function openLb(sym){
+    lbt.textContent = sym;
+    lbr.href = 'https://app.recharm.com/app/trsgolf/?clipId=' + sym;
+    lbv.src = MED[sym] || '';
+    lb.hidden = false;
+    lbv.muted = false;
+    var p = lbv.play(); if(p && p.catch) p.catch(function(){});
+  }
+  function closeLb(){ lb.hidden = true; lbv.pause(); lbv.removeAttribute('src'); lbv.load(); }
+  document.querySelectorAll('.card').forEach(function(c){
+    c.addEventListener('click', function(e){
+      if(e.target.closest('a.ext')) return;
+      e.preventDefault(); openLb(c.dataset.sym);
+    });
+  });
+  document.getElementById('lbx').addEventListener('click', closeLb);
+  lb.addEventListener('click', function(e){ if(e.target === lb) closeLb(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && !lb.hidden) closeLb(); });
+})();
+</script>
+
+</body>
+</html>
