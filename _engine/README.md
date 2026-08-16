@@ -17,3 +17,10 @@ source clips playing inline. Served at briefs.trsgolf.com (GitHub Pages, this re
 - The Google Doc brief stays the writable source of truth; these pages are generated views.
 - Full workflow: VIDEO_BRIEF_BUILDER_SKILL.md ("Render the Brief & Storyboard" section) in
   Marketing/Creative Engine (TRS Golf repo).
+
+## Drift Guard
+
+Every build embeds `build <hash>` (template content hash) in the page footer. The Claude
+artifact (WIP) and the live page must show the SAME stamp after a push — if they differ,
+the live page is stale. "Push" always means: rebuild BOTH outputs from the current template,
+publish both, confirm stamps match. No scheduled checker — the stamp makes the check free.

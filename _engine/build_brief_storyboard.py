@@ -21,6 +21,13 @@ import json, os, sys
 S3 = "https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source"
 RURL = "https://app.recharm.com/app/trsgolf/?clipId="
 
+import hashlib
+
+def build_stamp(template_html):
+    """Short content hash of the template — embedded in every output so the
+    artifact and the live page can be compared at a glance. Same stamp = same content."""
+    return hashlib.sha256(template_html.encode()).hexdigest()[:6]
+
 def main(cfg_path):
     cfg = json.load(open(cfg_path))
     assets, drive = cfg["assets"], cfg["drive"]
@@ -39,6 +46,8 @@ def main(cfg_path):
                             '<div class="cards">' + "".join(vid(s, l) for s, l in items) + "</div>")
     med = {s: f"{S3}/final/{a[1]}.mp4" for s, a in assets.items()}
     html = html.replace("{{MEDMAP}}", json.dumps(med))
+    stamp = build_stamp(html)
+    html += f'\n<p style="text-align:center;color:#9AA0A6;font-size:.72rem;margin:3rem 0 0">build {stamp}</p>'
     page = ('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
             '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
             '<meta name="robots" content="noindex, nofollow">\n'
