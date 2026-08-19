@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+</head>
+<body>
+<title>Everyone Swings It Differently | Jay Kelly</title>
+<style>
+  :root{
+    --ground:#FFFFFF; --panel:#F6F6F4; --ink:#1F1F1F; --muted:#5F6368;
+    --line:#DADCE0; --red:#CF2437; --red-soft:#FBECEE; --chipbg:#F1F3F4;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#171717; --panel:#20201F; --ink:#E8E8E6; --muted:#9AA0A6;
+      --line:#3C4043; --red:#E35664; --red-soft:#33191D; --chipbg:#2A2B2D;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#171717; --panel:#20201F; --ink:#E8E8E6; --muted:#9AA0A6;
+    --line:#3C4043; --red:#E35664; --red-soft:#33191D; --chipbg:#2A2B2D;
+  }
+  body{background:var(--ground); color:var(--ink); font-family:Arial,Helvetica,sans-serif; font-size:15.5px; line-height:1.55; margin:0;}
+  .wrap{max-width:46rem; margin:0 auto; padding:2.6rem 1.25rem 5rem;}
+  .masthead{background:#161616;}
+  .mh-in{max-width:46rem; margin:0 auto; padding:.85rem 1.25rem; display:flex; align-items:center; gap:.85rem;}
+  .toplogo{height:40px; width:auto; color:#FFFFFF; display:block;}
+  .mh-sep{color:rgba(255,255,255,.4); font-size:1.5rem; font-weight:300; line-height:1;}
+  .mh-title{color:#FFFFFF; font-size:1.1rem; font-weight:700; letter-spacing:-.02em;}
+  .btype{font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--red); margin:0 0 .45rem;}
+  h1{font-size:1.7rem; font-weight:700; line-height:1.25; margin:0 0 .6rem; text-wrap:balance;}
+  h2{font-size:1.15rem; font-weight:700; margin:2.2rem 0 .3rem;}
+  h2 + p{margin-top:.25rem;}
+  a{color:var(--red); text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .meta{color:var(--muted); font-size:.9rem;}
+  .chips{display:flex; gap:.5rem; flex-wrap:wrap; margin:.8rem 0 1.4rem;}
+  p:has(.pill){line-height:1.9;}
+  .chip img, .pill img{width:15px; height:15px; object-fit:contain;}
+  .pill{display:inline-flex; margin:0 .18rem; align-items:center; gap:.4rem; background:var(--chipbg); border:1px solid var(--line); border-radius:999px; padding:.1rem .8rem .1rem .6rem; color:var(--ink); text-decoration:none; white-space:nowrap; font-size:.83rem; line-height:1.55; vertical-align:middle;}
+  .pill b{color:var(--red);}
+  .pill:hover{border-color:var(--red); text-decoration:none;}
+  .card span a.ext{display:inline-block; background:var(--chipbg); border:1px solid var(--line); border-radius:999px; padding:0 .45rem; text-decoration:none; font-size:.95em;}
+  .card span a.ext:hover{border-color:var(--red);}
+  .chip{display:inline-flex; align-items:center; gap:.4rem; background:var(--chipbg); border:1px solid var(--line); border-radius:999px; padding:.1rem .8rem .1rem .6rem; font-size:.83rem; color:var(--ink); text-decoration:none;}
+  .chip:hover{text-decoration:none; border-color:var(--red); color:var(--red);}
+  .claim{background:var(--red-soft); border-left:4px solid var(--red); padding:.9rem 1.1rem; margin:1.1rem 0; font-size:1rem;}
+  table.facts{width:100%; border-collapse:collapse; margin:1rem 0 1.4rem; font-size:.92rem;}
+  table.facts td{border:1px solid var(--line); padding:.45rem .7rem; vertical-align:top;}
+  table.facts td:first-child{width:11rem; font-weight:700; background:var(--panel);}
+  td.bigclaim{color:var(--red); font-weight:700;}
+  .legend{background:var(--panel); border:1px solid var(--line); padding:.7rem 1rem; font-size:.86rem; color:var(--muted); margin:1rem 0;}
+  .legend b{color:var(--ink);}
+  .sblock{border-top:1px solid var(--line); padding:1.1rem 0;}
+  .kicker{font-size:.78rem; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--red); display:block; margin-bottom:.35rem;}
+  .l{margin:.15rem 0; }
+  .l b.tag{font-size:.72rem; font-weight:700; letter-spacing:.04em; background:var(--panel); border:1px solid var(--line); padding:.05rem .4rem; margin-right:.45rem; white-space:nowrap;}
+  .l i{font-size:1rem;}
+  .tc{font-family:Menlo,monospace; font-size:.74rem; color:var(--muted); white-space:nowrap;}
+  .sfoot{color:var(--muted); font-size:.9rem; margin:.45rem 0 .4rem;}
+  .ed{font-size:.88rem; margin:.55rem 0 0; padding:.5rem .8rem; background:var(--panel); border:1px solid var(--line);}
+  .ed b{font-size:.7rem; letter-spacing:.06em; text-transform:uppercase; color:var(--muted);}
+  .cards{display:flex; gap:.7rem; flex-wrap:wrap; margin:.7rem 0 .2rem;}
+  .card{display:flex; flex-direction:column; gap:.25rem; cursor:pointer;}
+  .card video{height:190px; width:auto; max-width:210px; object-fit:cover; background:#000; border:1px solid var(--line); display:block;}
+  .card span{font-size:.76rem; color:var(--muted); max-width:210px;}
+  .card:hover span{color:var(--red);}
+  .gapnote{border:1px dashed var(--red); padding:.6rem .9rem; font-size:.88rem; margin:.6rem 0; color:var(--muted);}
+  #lb{position:fixed; inset:0; background:rgba(0,0,0,.8); display:flex; align-items:center; justify-content:center; z-index:50; padding:1rem;}
+  #lb[hidden]{display:none;}
+  .lb-box{background:var(--ground); max-width:min(92vw,600px); padding:.8rem;}
+  .lb-box video{display:block; max-height:74vh; max-width:100%; margin:0 auto; background:#000;}
+  .lb-bar{display:flex; align-items:center; gap:1rem; padding:.6rem .2rem 0;}
+  .lb-bar b{font-family:Menlo,monospace; font-size:.85rem;}
+  .lb-bar a{font-size:.85rem; margin-left:auto;}
+  .lb-bar button{background:none; border:1px solid var(--line); color:var(--ink); padding:.15rem .55rem; cursor:pointer; font-size:.85rem;}
+</style>
+<header class="masthead"><div class="mh-in"><svg class="toplogo" role="img" aria-label="TRS Golf" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" role="img" aria-label="TRS Golf">
+  <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)"
+fill="currentColor" stroke="none">
+<path d="M6445 3950 c-310 -33 -463 -153 -525 -411 -60 -251 -24 -439 108
+-561 75 -69 134 -100 412 -213 250 -101 271 -112 297 -151 39 -60 8 -220 -52
+-272 -65 -58 -140 -63 -695 -53 l-215 4 -22 -149 c-11 -82 -18 -152 -15 -155
+10 -9 164 -36 310 -54 187 -22 401 -29 548 -16 386 34 526 160 580 525 38 259
+-16 419 -178 525 -38 25 -168 83 -330 147 -147 58 -279 115 -294 126 -55 44
+-64 116 -28 228 19 57 43 86 91 108 34 15 76 17 429 14 l392 -3 10 63 c30 179
+34 221 21 228 -17 11 -200 48 -299 60 -115 15 -446 21 -545 10z"/>
+<path d="M4450 3940 c-206 -12 -217 -14 -224 -48 -3 -15 -24 -160 -46 -322
+-35 -252 -173 -1238 -214 -1527 l-13 -93 212 0 211 0 54 381 54 380 207 -3
+c202 -3 208 -4 232 -26 14 -13 30 -36 36 -50 6 -15 31 -164 56 -332 25 -168
+47 -315 50 -327 5 -23 5 -23 226 -23 l221 0 -6 28 c-3 15 -28 162 -56 326 -28
+164 -58 319 -67 344 -32 95 -85 154 -167 188 -25 11 -46 22 -46 25 0 3 39 15
+87 27 197 49 300 166 347 395 20 97 21 265 1 341 -42 159 -166 259 -375 301
+-100 21 -527 29 -780 15z m655 -350 c62 -31 85 -72 85 -153 0 -119 -47 -274
+-97 -319 -10 -10 -41 -28 -68 -40 -46 -21 -66 -23 -273 -26 l-223 -4 6 39 c16
+106 75 526 75 530 0 3 100 3 223 1 213 -3 224 -4 272 -28z"/>
+<path d="M2375 3898 c-4 -21 -45 -311 -45 -323 0 -3 131 -5 290 -5 232 0 290
+-3 290 -13 0 -7 -47 -346 -105 -753 -57 -406 -107 -765 -111 -796 l-7 -58 217
+0 c119 0 216 3 216 7 0 3 43 310 95 682 53 372 103 732 113 801 l17 125 292 3
+292 2 5 33 c3 17 13 84 21 147 9 63 18 127 21 143 l6 27 -801 0 -801 0 -5 -22z"/>
+</g>
+  <g transform="translate(0.000000,449.330000) scale(0.100000,-0.100000)"
+fill="#FC3137" stroke="none">
+<path d="M1656 732 l-200 -167 3142 -3 3143 -2 91 77 c50 43 112 96 138 118
+26 22 72 60 103 85 31 25 56 48 57 53 0 4 -1412 7 -3137 7 l-3138 -1 -199
+-167z"/>
+</g>
+</svg><span class="mh-sep">|</span><span class="mh-title">Ad Briefs</span></div></header>
+<div class="wrap">
+  <div class="btype">Creator Brief</div>
+  <h1>Everyone Swings It Differently | Jay Kelly</h1>
+  <div class="chips">
+    <a class="chip" href="https://drive.google.com/drive/folders/1M12xXpXTbukMDZe9uzOm-g0AcSvF-1yV" target="_blank" rel="noopener"><img src="data:image/png;base64,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" alt=""> Upload Folder</a>
+  </div>
+
+  <div class="claim">
+    <b>Filming brief. No script to learn.</b> Say it in your own words and your own style. The clips on this page are references from our library. They show the shot we mean. Film your own version.
+  </div>
+
+  <h2 style="margin-top:1.2rem">Filming Instructions</h2>
+  <table class="facts">
+    <tr><td>Format</td><td>9:16 portrait, keep key content inside 4:5 safeguards</td></tr>
+    <tr><td>Quality</td><td>4K/HD · wear a mic</td></tr>
+    <tr><td>Delivery</td><td>Upload ALL clips raw and unedited to the <a class="pill" href="https://drive.google.com/drive/folders/1M12xXpXTbukMDZe9uzOm-g0AcSvF-1yV" target="_blank" rel="noopener"><img src="data:image/png;base64,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" alt=""><b>Upload Folder</b></a>. Name each clip with the scene and a short description</td></tr>
+  </table>
+
+  <table class="facts">
+    <tr><td>Big Claim</td><td class="bigclaim"><i>"Everyone swings it differently, but as long as you get the right impact position, you're going to make improvements in your game."</i></td></tr>
+    <tr><td>Concept</td><td>C79 | Iteration | V2</td></tr>
+    <tr><td>Product</td><td>TRS Slider</td></tr>
+    <tr><td>Type</td><td>VID</td></tr>
+    <tr><td>Partnership</td><td>P</td></tr>
+    <tr><td>Main Lever</td><td>Authority</td></tr>
+    <tr><td>Angle</td><td>Practice Smarter</td></tr>
+    <tr><td>Awareness</td><td>TOF</td></tr>
+    <tr><td>Format</td><td>Coach Tutorial</td></tr>
+  </table>
+
+  <h2>Video Overview</h2>
+  <p>You are recommending one thing every golfer should add to their game. You have coached for twenty years and seen every kind of swing, so you know there is no single correct one. The thing they all have in common is where they arrive at impact. That is what you train, and the Slider is what you use to train it.</p>
+
+  <h2>Video Structure</h2>
+  <p>The one idea this video needs to land: your swing does not have to look like anybody else's, it just has to get to the right place at impact. Once a golfer believes that, the Slider is the obvious way to train it.</p>
+  <p>Your words, your style, but keep this order. The whole video should run 80 to 100 seconds. Reference clips sit inside each scene.</p>
+
+  <div class="sblock"><span class="kicker">Scene 1 · The Hook (0 to 10 seconds)</span>
+    <p class="l">Straight down the lens, on the course, no introduction: "If there is one thing I'd recommend every golfer add to his golf game, this would be it."</p>
+    <p class="sfoot">Do not say your name or your credentials yet. The recommendation comes first.</p></div>
+
+  <div class="sblock"><span class="kicker">Scene 2 · Who You Are (10 to 25 seconds)</span>
+    <p class="l">"I've been coaching twenty years. Thousands of lessons. And the first thing you learn is there's no one correct swing. As a coach, I've seen it all."</p>
+    <p class="l">Then the line the whole video rests on: "Everyone swings it differently, but as long as you get the right impact position, you're going to make improvements in your game."</p>
+    <p class="sfoot">Say that second line exactly as written. Everything else is yours.</p></div>
+
+  <div class="sblock"><span class="kicker">Scene 3 · The Three Swings (25 to 45 seconds). This is the video. Everything else is setup.</span>
+    <p class="l">"Watch these three." Then three golfers, one after another, swinging. Pick three who look as different from each other as you can find — different builds, different tempos, different backswings.</p>
+    <p class="l">"Different backswings. Different everything. Now watch where they all get to."</p>
+    <p class="l">We freeze all three at impact side by side in the edit, so film each swing cleanly from the same angle. "Same position. That's the part that matters."</p>
+    <p class="sfoot">Film each of the three swings twice, face-on and down the line, so we can choose. The more different the three look, the better this works.</p>
+    <div class="cards"><div class="card" data-sym="AWX" tabindex="0" role="button" aria-label="Preview REFERENCE, face-on with the Slider on"><video loop muted playsinline preload="metadata" poster="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/poster/obvG2Nn0vVI5JYSamzX.jpg" src="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/preview/obvG2Nn0vVI5JYSamzX.mp4"></video><span>REFERENCE, face-on with the Slider on</span></div><div class="card" data-sym="AGG" tabindex="0" role="button" aria-label="Preview REFERENCE, a different swing with the Slider on"><video loop muted playsinline preload="metadata" poster="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/poster/UILXFM1mectwuyFDXovQJ.jpg" src="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/preview/UILXFM1mectwuyFDXovQJ.mp4"></video><span>REFERENCE, a different swing with the Slider on</span></div></div></div>
+
+  <div class="sblock"><span class="kicker">Scene 4 · The Slider (45 to 75 seconds)</span>
+    <p class="l">"So how do you actually train it? This is the TRS Slider. Robert Rock designed it. I use it with my players and I use it myself."</p>
+    <p class="l">Put it on while you talk: "Strap it on your trail arm, hit balls. It keeps your arm connected so you arrive in that position without thinking about it."</p>
+    <p class="l">Then show the feedback: "You feel it straight away, go to throw the arm and it stops you." Hit a few shots with it on.</p>
+    <p class="sfoot">Talk through what you are feeling as you hit, the way you would with a student stood next to you. Not a product pitch.</p>
+    <div class="cards"><div class="card" data-sym="BHE" tabindex="0" role="button" aria-label="Preview REFERENCE, the Slider going on the arm"><video loop muted playsinline preload="metadata" poster="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/poster/mT4Qrw1hcub15Wcp1s6N.jpg" src="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/preview/mT4Qrw1hcub15Wcp1s6N.mp4"></video><span>REFERENCE, the Slider going on the arm</span></div><div class="card" data-sym="CKD" tabindex="0" role="button" aria-label="Preview REFERENCE, hitting shots with it on"><video loop muted playsinline preload="metadata" poster="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/poster/vchrueize4znjdvzuJKQa.jpg" src="https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/preview/vchrueize4znjdvzuJKQa.mp4"></video><span>REFERENCE, hitting shots with it on</span></div></div></div>
+
+  <div class="sblock"><span class="kicker">Scene 5 · The Close (75 to 100 seconds)</span>
+    <p class="l">"That's the feeling. That's all it is."</p>
+    <p class="l">"Your swing's still your swing. You'll just start striking it better."</p>
+    <p class="l">"There's a 60-day guarantee on it, so give it a go."</p></div>
+
+  <div class="sblock"><span class="kicker">Also Capture</span>
+    <p class="l">Range and course shots in your usual style, and a few close-ups of the strap on the arm. The vibe is the brand.</p></div>
+
+  <div class="legend"><b>Production notes</b><br>
+Film outside on the range or the course, not indoors. Natural light.<br>
+Wear the Slider from Scene 4 onward. Scenes 1 to 3 are you and the swings.<br>
+The three swings in Scene 3 carry the whole video. Give that the most time.<br>
+Film clean swings. We add the freeze frames and any graphics in the edit.<br>
+Speak like you are coaching a student, not presenting to a camera.<br>
+Nothing needs memorising except the one line in Scene 2.</div>
+
+  <h2>Why This Video</h2>
+  <p class="meta">What works for us at the moment is coaches actually teaching on camera, so keep this as close to a real lesson as you can. Nothing about slicing in this one. Plenty of golfers who do not slice still have a bad impact position, and this video is for all of them. Some viewers will think "that will not work for my swing" — the three swings in Scene 3 are the answer to that, which is why they matter more than anything else here.</p>
+<p style="text-align:center;color:#9AA0A6;font-size:.72rem;margin:3rem 0 0">build c79v2</p>
+</div>
+<div id="lb" hidden>
+  <div class="lb-box">
+    <video id="lbv" controls playsinline></video>
+    <div class="lb-bar"><b id="lbt"></b><button id="lbx" aria-label="Close">✕ close</button></div>
+  </div>
+</div>
+<script>
+var MED = {"AWX": "https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/final/SxGhnGAO7CW7i9NXq3A2.mp4", "AGG": "https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/final/aS1zuzUBbTpBgwAcl2MUI.mp4", "BHE": "https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/final/BkEIeQUHduLk898eaEY6L.mp4", "CKD": "https://recharm-content-library.s3-accelerate.amazonaws.com/trsgolf/clips/source/final/36h73FaIFsYAqNsM8Kb0.mp4"};
+(function(){
+  var vids = document.querySelectorAll('.card video');
+  function nudge(v){ var p = v.play(); if(p && p.catch) p.catch(function(){}); }
+  vids.forEach(function(v){
+    v.closest('.card').addEventListener('mouseenter', function(){ nudge(v); });
+  });
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting) nudge(e.target); else e.target.pause(); }); }, {threshold:.2});
+    vids.forEach(function(v){ io.observe(v); });
+  }
+  var lb=document.getElementById('lb'), lbv=document.getElementById('lbv'),
+      lbt=document.getElementById('lbt');
+  function openLb(sym){
+    lbt.textContent = sym;
+    
+    lbv.src = MED[sym] || '';
+    lb.hidden = false;
+    lbv.muted = false;
+    var p = lbv.play(); if(p && p.catch) p.catch(function(){});
+  }
+  function closeLb(){ lb.hidden = true; lbv.pause(); lbv.removeAttribute('src'); lbv.load(); }
+  document.querySelectorAll('.card').forEach(function(c){
+    c.addEventListener('click', function(e){
+      if(e.target.closest('a.ext')) return;
+      e.preventDefault(); openLb(c.dataset.sym);
+    });
+  });
+  document.getElementById('lbx').addEventListener('click', closeLb);
+  lb.addEventListener('click', function(e){ if(e.target === lb) closeLb(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && !lb.hidden) closeLb(); });
+})();
+</script>
+
+</body>
+</html>
