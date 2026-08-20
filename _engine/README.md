@@ -5,10 +5,15 @@ source clips playing inline. Served at briefs.trsgolf.com (GitHub Pages, this re
 
 - One folder per brief; slug = the Asana card name, lowercased and hyphenated, no date
   (e.g. `c12-it-v3-sld-vid-towel-drill-vs-slider/`). Old slugs keep a meta-refresh redirect stub.
-- `template-c12-example.html` — the reference template (C12 content left in as a worked example).
-  Structure: masthead (TRS | Ad Briefs) → card-name H1 → chips (Docs Brief / Folder / Asana /
-  Recharm) → Upload Instructions → facts table (Asana naming order) → Previous Versions →
-  Video Overview + Key → Hooks → Main Script blocks with {{CARDS_x}} clip slots → lightbox.
+- **Two templates, one per reader. Pick by who reads the page, not by whether a Loom exists.**
+  - `template-creator-brief.html` — new shoot, the reader films it.
+    Sections: Classification · Filming Instructions · Video Overview · Hooks To Film · Scenes · Extra B-Roll
+  - `template-editor-brief.html` — footage exists, the reader cuts it.
+    Sections: Classification · Delivery · Video Overview · Script Tags · Hooks To Cut · Scenes
+  - Section names and order MIRROR the Google Doc templates in `01 | Ad Production`
+    ([Template] | Creator Brief / [Template] | Editor Brief). If a section changes in the Doc it
+    changes here, and vice versa. Do not add a section to one and not the other.
+- `template-c12-example.html` — LEGACY, kept only because existing pages were built from it.
 - `build_brief_storyboard.py` — fills {{CARDS_x}} + {{MEDMAP}} from a config; clips stream from
   Recharm S3 unsigned URLs. Never use `autoplay preload="auto"` on many clips (renderer stall);
   the template plays on-view via IntersectionObserver.
