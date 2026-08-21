@@ -29,3 +29,14 @@ Every build embeds `build <hash>` (template content hash) in the page footer. Th
 artifact (WIP) and the live page must show the SAME stamp after a push — if they differ,
 the live page is stale. "Push" always means: rebuild BOTH outputs from the current template,
 publish both, confirm stamps match. No scheduled checker — the stamp makes the check free.
+
+## Every brief carries three links
+
+A brief is only findable if all three artifacts point at each other. Whenever a page is built:
+
+- **Asana card description** opens with, in this order:
+  `Brief & Storyboard -> <page url>` / `Google Docs Brief -> <doc url>` / `Ad Folder -> <ad folder url>`
+- **Google Doc** carries the page URL in its Classification table (`Brief Page` row).
+- **Page** carries chips for the Brief Doc and the ad folder.
+
+The page is a generated view of the Doc, so a page nothing links to is a page nobody reads.
