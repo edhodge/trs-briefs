@@ -30,13 +30,11 @@ artifact (WIP) and the live page must show the SAME stamp after a push — if th
 the live page is stale. "Push" always means: rebuild BOTH outputs from the current template,
 publish both, confirm stamps match. No scheduled checker — the stamp makes the check free.
 
-## Every brief carries three links
+## Every artifact reaches the other two
 
-A brief is only findable if all three artifacts point at each other. Whenever a page is built:
-
-- **Asana card description** opens with, in this order:
-  `Brief & Storyboard -> <page url>` / `Google Docs Brief -> <doc url>` / `Ad Folder -> <ad folder url>`
-- **Google Doc** carries the page URL in its Classification table (`Brief Page` row).
-- **Page** carries chips for the Brief Doc and the ad folder.
-
-The page is a generated view of the Doc, so a page nothing links to is a page nobody reads.
+- **Asana card description** — exactly two lines:
+  `Brief & Storyboard -> <page url>` then `Ad Folder -> <ad folder url>`.
+  The Doc gets no line: it lives in the ad folder, so the folder link already reaches it.
+  The page earns one because it is not in the folder.
+- **Google Doc** — the page URL in its Classification table (`Brief Page` row).
+- **Page** — chips for the Brief Doc and the ad folder.
