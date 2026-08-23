@@ -36,5 +36,6 @@ publish both, confirm stamps match. No scheduled checker — the stamp makes the
   `Brief & Storyboard -> <page url>` then `Ad Folder -> <ad folder url>`.
   The Doc gets no line: it lives in the ad folder, so the folder link already reaches it.
   The page earns one because it is not in the folder.
-- **Google Doc** — the page URL in its Classification table (`Brief Page` row).
+- **Google Doc** — the page URL in its Classification table (`Brief Page` row). This row is **Doc-only** —
+  never render it on the page, which would link to the page you are already on.
 - **Page** — chips for the Brief Doc and the ad folder.

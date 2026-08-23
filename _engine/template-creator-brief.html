@@ -62,6 +62,10 @@
   .l i{font-size:1rem;}
   .tc{font-family:Menlo,monospace; font-size:.74rem; color:var(--muted); white-space:nowrap;}
   .sfoot{color:var(--muted); font-size:.9rem; margin:.45rem 0 .4rem;}
+  .sblock .kicker + .l::before, .sblock .sfoot::before{display:block; font-size:.7rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); margin-bottom:.15rem;}
+  .sblock .kicker + .l::before{content:"Script";}
+  .sblock .sfoot::before{content:"Visual / B-Roll";}
+  .sblock .sfoot{margin-top:.9rem;}
   .ed{font-size:.88rem; margin:.55rem 0 0; padding:.5rem .8rem; background:var(--panel); border:1px solid var(--line);}
   .ed b{font-size:.7rem; letter-spacing:.06em; text-transform:uppercase; color:var(--muted);}
   .cards{display:flex; gap:.7rem; flex-wrap:wrap; margin:.7rem 0 .2rem;}
@@ -122,7 +126,6 @@ fill="#FC3137" stroke="none">
   <table class="facts">
     <tr><td>Concept ID (C#)</td><td>{{CONCEPT_ID}}</td></tr>
     <tr><td>Loom Walkthrough</td><td>{{LOOM}}</td></tr>
-    <tr><td>Brief Page</td><td>{{BRIEF_PAGE}}</td></tr>
     <tr><td>Ad Version</td><td>{{AD_VERSION}}</td></tr>
     <tr><td>Product (SKU)</td><td>{{SKU}}</td></tr>
     <tr><td>Ad Name</td><td>{{AD_NAME}}</td></tr>
