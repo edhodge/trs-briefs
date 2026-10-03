@@ -389,6 +389,6 @@ The @carlociullogolf "Slider" DTL file is actually a Ball clip — skip it.</div
   });
 })();
 </script>
-<style>.curcut{margin:.7rem 0 .2rem;width:200px;max-width:60%}.curcut video{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:10px;display:block;background:#000}.cc-lab{display:block;font-size:.72rem;color:#9AA0A6;margin-top:.3rem}</style><script>(function(){if(!("IntersectionObserver"in window))return;var o=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target;if(e.isIntersecting){v.play&&v.play().catch(function(){});}else{v.pause&&v.pause();}})},{threshold:0.25});document.querySelectorAll(".curcut video").forEach(function(v){o.observe(v);});})();</script>
+<style>.curcut{margin:.7rem 0 .2rem;width:200px;max-width:60%}.curcut video{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:10px;display:block;background:#000}.cc-lab{display:block;font-size:.72rem;color:#9AA0A6;margin-top:.3rem}</style><script>(function(){if(!("IntersectionObserver"in window))return;var o=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target;if(e.isIntersecting){v.play&&v.play().catch(function(){});}else{v.pause&&v.pause();}})},{threshold:0.25});document.querySelectorAll(".curcut video").forEach(function(v){v.muted=true;v.defaultMuted=true;v.playsInline=true;o.observe(v);if(v.getBoundingClientRect().top<innerHeight&&v.getBoundingClientRect().bottom>0){v.play&&v.play().catch(function(){});}});})();</script>
 </body>
 </html>
